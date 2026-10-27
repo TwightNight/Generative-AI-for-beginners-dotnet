@@ -50,7 +50,11 @@ Console.WriteLine();
 // This is the CORRECT way to initialize a conversation with a system message
 List<ChatMessage> conversation = new()
 {
-    new ChatMessage(ChatRole.System, "You are a good assistance with short and smart answers")
+    new ChatMessage(ChatRole.System, "You are a good assistance. Answer only questions about soccer. For other topics, say 'I can only help with soccer questions.'")
+    /*new ChatMessage(ChatRole.System, 
+        "You are a senior .NET developer. Answer questions about C# and .NET. " +
+        "Keep responses concise. Use code examples when helpful. " +
+        "If asked about other topics, politely redirect to .NET topics.")*/
 };
 
 while (true)

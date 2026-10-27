@@ -3,9 +3,9 @@ using OpenAI.Chat;
 using System.ClientModel;
 using System.Text;
 
-var model = "Phi-3.5-mini-instruct-cuda-gpu";
-var baseUrl = "http://localhost:5273/v1";
-var apiKey = "unused";
+var model = "gemma4:e4b";
+var baseUrl = "http://localhost:11434/v1/"; // Ollama API endpoint
+var apiKey = "ollama";
 
 OpenAIClientOptions options = new OpenAIClientOptions();
 options.Endpoint = new Uri(baseUrl);
